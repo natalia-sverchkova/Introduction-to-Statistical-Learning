@@ -28,6 +28,8 @@ table(glm.pred,Direction)
 (507+145)/1250
 mean(glm.pred==Direction)
 train=(Year<2005)
+
+# sign ! reverse the Boolean vars
 Smarket.2005=Smarket[!train,]
 dim(Smarket.2005)
 Direction.2005=Direction[!train]
